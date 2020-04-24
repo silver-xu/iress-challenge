@@ -1,4 +1,4 @@
-# Iress Challenge [![Build Status](https://travis-ci.org/silver-xu/iress-challenge.svg?branch=master)](https://travis-ci.org/silver-xu/iress-challenge) [![codecov](https://codecov.io/gh/silver-xu/iress-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/silver-xu/iress-challenge)
+# Iress Challenge [![Build Status](https://travis-ci.org/silver-xu/iress-challenge.svg?branch=master)](https://travis-ci.org/silver-xu/iress-challenge) [![codecov](https://codecov.io/gh/silver-xu/iress-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/silver-xu/iress-challenge) [![Greenkeeper badge](https://badges.greenkeeper.io/silver-xu/iress-challenge.svg)](https://greenkeeper.io/)
 
 > Iress Challenge based on Typescript, ESlint, Prettier and Husky.
 
