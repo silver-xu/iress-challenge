@@ -31,7 +31,8 @@
     }
   },
   "resolutions": {
-    "handlebars": "4.5.0"
-  },
-  "dependencies": {}
+    "handlebars": "4.5.0",
+    "minimist": "^1.2.5",
+    "acorn": "^7.1.1"
+  }
 }
