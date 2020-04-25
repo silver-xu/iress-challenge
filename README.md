@@ -1,4 +1,4 @@
-# Iress Challenge [![Build Status](https://travis-ci.org/silver-xu/iress-challenge.svg?branch=master)](https://travis-ci.org/silver-xu/iress-challenge) [![codecov](https://codecov.io/gh/silver-xu/iress-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/silver-xu/iress-challenge)
+# Iress Challenge [![Build Status](https://travis-ci.org/silver-xu/iress-challenge.svg?branch=master)](https://travis-ci.org/silver-xu/iress-challenge) [![codecov](https://codecov.io/gh/silver-xu/iress-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/silver-xu/iress-challenge) [![Known Vulnerabilities](https://snyk.io/test/github/silver-xu/iress-challenge/badge.svg?targetFile=package.json)](https://snyk.io/test/github/silver-xu/iress-challenge?targetFile=package.json)
 
 > Iress Challenge based on Typescript, ESlint, Prettier and Husky.
 
