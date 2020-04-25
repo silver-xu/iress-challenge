@@ -10,6 +10,8 @@ describe('Robot tests', () => {
       robots: [],
     };
 
+    type commandMethodType = 'place' | 'move' | 'left' | 'right' | 'report' | 'exec';
+
     beforeEach(() => {
       robot = new Robot(board);
       board.robots = [robot];
@@ -19,22 +21,27 @@ describe('Robot tests', () => {
       {
         commandGroup: { command: 'PLACE', args: { x: 0, y: 0, direction: Direction.WEST } },
         expectedArgs: [0, 0, Direction.WEST],
+        methodToCall: 'place',
       },
       {
         commandGroup: { command: 'MOVE' },
+        methodToCall: 'move',
       },
       {
         commandGroup: { command: 'LEFT' },
+        methodToCall: 'left',
       },
       {
         commandGroup: { command: 'RIGHT' },
+        methodToCall: 'right',
       },
       {
         commandGroup: { command: 'REPORT' },
+        methodToCall: 'report',
       },
-    ].forEach(({ commandGroup, expectedArgs }) => {
+    ].forEach(({ commandGroup, methodToCall, expectedArgs }) => {
       it(`For commandGroup ${commandGroup.command}, a corresponding command in Robot should be called accordingly with args`, () => {
-        const call = jest.spyOn(robot, commandGroup.command.toLowerCase() as any);
+        const call = jest.spyOn(robot, methodToCall as commandMethodType);
         robot.exec(commandGroup);
 
         if (!expectedArgs) {
