@@ -8,9 +8,11 @@ The first and foremost aspect I would look for in an environment was respect to 
 
 The second sign of a collaborative team would be trust. Team members should have trust and faith in each other to make technical or organizational decisions based on their best experience and knowledge. If in one's perspective the decision is completely incorrect, I wish he would be a person who would ask the reason and listen respectfully before advising a change.
 
-The last but not the least, a highly collaborative team would also be high productive. Everyone should share the same vision, similar value and target the same goal. The team would function autonomously, and the members would be passionate and proud of their own piece of craft.
+The last but not the least, a highly collaborative team would also be highly productive. Everyone should share the same vision, similar value and target the same goal. The team would function autonomously, and the members would be passionate and proud of their own piece of craft.
 
 > In your day to day work, how do you come to understand whether the work you are doing is creating value?
+
+Answer:
 
 - Professional Value
 
@@ -22,9 +24,11 @@ The last but not the least, a highly collaborative team would also be high produ
 
 - Career Value
 
-  I know I am creating my career value while I support the junior or graduate members of the team to grow in their professional career, in the same way I was supported in their position.
+  I know I am creating my career value while I support the junior or graduate members of the team to grow in their professional career, in the same way I was supported at the beginning of my career by my mentors.
 
 > Do you prefer OO or Functional programming? Why? What are the core benefits of both? (It’s ok if you don’t know one, just talk about what you’re familiar with)
+
+Answer:
 
 In my 14 years of development experience, most of my time was spent on OO programming until the recent years.
 
@@ -35,6 +39,8 @@ In the last few years, micro-services architecture has grown greatly in populari
 In my opinion, for modern projects I would choose to use functional programming with typescript, and use OO only when its required to produce cleaner code. The toy robot project is a great example as the Class Robot should encapsulate its own properties and methods as the caller of Robot should only need to understand the interface of the class.
 
 > What are the most important practices to ensure software quality (in as much detail as you can give)?
+
+Answer:
 
 - Clean, testable & understandable code
 
@@ -71,6 +77,8 @@ In my opinion, for modern projects I would choose to use functional programming 
   Write defensive, secure code and deploy to secure infrastructure. Use tools like Secrets Manager to protect secrets.
 
 > In your experience, what are the 3 most valuable software engineering practices?
+
+Answer:
 
 1. Use Microservices with managable boundaries
 
