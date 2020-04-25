@@ -1,14 +1,57 @@
 [
   {
+    "test": "Basic 1",
     "commands": ["PLACE 0,0,NORTH", "REPORT", "MOVE", "REPORT"],
     "output": { "x": 0, "y": 1, "direction": "NORTH" }
   },
   {
+    "test": "Basic 2",
     "commands": ["PLACE 0,0,NORTH", "LEFT", "REPORT"],
     "output": { "x": 0, "y": 0, "direction": "WEST" }
   },
   {
+    "test": "Basic 3",
     "commands": ["PLACE 1,2,EAST", "MOVE", "MOVE", "LEFT", "MOVE", "REPORT"],
     "output": { "x": 3, "y": 3, "direction": "NORTH" }
+  },
+  {
+    "test": "Edge 1",
+    "commands": ["PLACE 0,0,SOUTH", "MOVE", "MOVE", "LEFT", "MOVE", "REPORT"],
+    "output": { "x": 1, "y": 0, "direction": "EAST" }
+  },
+  {
+    "test": "Edge 2",
+    "commands": ["PLACE 0,4,NORTH", "MOVE", "MOVE", "RIGHT", "MOVE", "REPORT"],
+    "output": { "x": 1, "y": 4, "direction": "EAST" }
+  },
+  {
+    "test": "Edge 3",
+    "commands": ["PLACE 4,4,EAST", "MOVE", "MOVE", "RIGHT", "MOVE", "REPORT"],
+    "output": { "x": 4, "y": 3, "direction": "SOUTH" }
+  },
+  {
+    "test": "Edge 4",
+    "commands": ["PLACE 4,0,SOUTH", "MOVE", "MOVE", "RIGHT", "MOVE", "REPORT"],
+    "output": { "x": 3, "y": 0, "direction": "WEST" }
+  },
+  {
+    "test": "Roundtrip left",
+    "commands": ["PLACE 0,0,SOUTH", "LEFT", "LEFT", "LEFT", "LEFT", "REPORT"],
+    "output": { "x": 0, "y": 0, "direction": "SOUTH" }
+  },
+  {
+    "test": "Roundtrip right",
+    "commands": ["PLACE 0,0,SOUTH", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "REPORT"],
+    "output": { "x": 0, "y": 0, "direction": "SOUTH" }
+  },
+  {
+    "test": "Invalid placement 1",
+    "commands": ["PLACE -1,0,NORTH", "MOVE", "MOVE", "REPORT"],
+    "output": {}
+  },
+  {
+    "test": "Invalid placement 2",
+    "commands": ["PLACE -1,0,NORTH", "PLACE 0,0,NORTH", "MOVE", "REPORT"],
+    "output": { "x": 0, "y": 1, "direction": "NORTH" }
   }
 ]

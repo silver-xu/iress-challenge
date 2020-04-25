@@ -10,7 +10,7 @@ const board: Board = {
   robots: [],
 };
 const robot = new Robot(board);
-board.robots.push(robot);
+board.robots = [robot];
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -27,15 +27,15 @@ export const processCommand = (commandText: string) => {
   }
 };
 
-const robotPrompt = () => {
+export const robotPrompt = (rl: readline.Interface) => {
   rl.question('Please enter a Toy Robot command: ', (commandText) => {
     if (commandText == 'exit') {
       console.log('Have a nice day!');
       return rl.close();
     }
     processCommand(commandText);
-    robotPrompt();
+    robotPrompt(rl);
   });
 };
 
-robotPrompt();
+robotPrompt(rl);

@@ -9,12 +9,17 @@ const board: Board = {
   ...config.dimensions,
   robots: [],
 };
-const robot = new Robot(board);
-board.robots.push(robot);
 
 describe('integration tests', () => {
-  integrationTests.forEach(({ commands, output }) => {
-    it('each integration test case should pass', () => {
+  let robot: Robot;
+
+  beforeEach(() => {
+    robot = new Robot(board);
+    board.robots = [robot];
+  });
+
+  integrationTests.forEach(({ test, commands, output }) => {
+    it(`${test} test case should pass`, () => {
       commands.forEach((command) => {
         const commandGroup = parseCommand(command);
         if (commandGroup) {

@@ -12,39 +12,35 @@ describe('Robot tests', () => {
 
     beforeEach(() => {
       robot = new Robot(board);
-      board.robots.push(robot);
+      board.robots = [robot];
     });
 
     [
       {
         commandGroup: { command: 'PLACE', args: { x: 0, y: 0, direction: Direction.WEST } },
-        expectToCall: Robot.prototype.place = jest.fn(),
         expectedArgs: [0, 0, Direction.WEST],
       },
       {
         commandGroup: { command: 'MOVE' },
-        expectToCall: Robot.prototype.move = jest.fn(),
       },
       {
         commandGroup: { command: 'LEFT' },
-        expectToCall: Robot.prototype.left = jest.fn(),
       },
       {
         commandGroup: { command: 'RIGHT' },
-        expectToCall: Robot.prototype.right = jest.fn(),
       },
       {
         commandGroup: { command: 'REPORT' },
-        expectToCall: Robot.prototype.report = jest.fn(),
       },
-    ].forEach(({ commandGroup, expectToCall, expectedArgs }) => {
+    ].forEach(({ commandGroup, expectedArgs }) => {
       it(`For commandGroup ${commandGroup.command}, a corresponding command in Robot should be called accordingly with args`, () => {
+        const call = jest.spyOn(robot, commandGroup.command.toLowerCase() as any);
         robot.exec(commandGroup);
 
         if (!expectedArgs) {
-          expect(expectToCall).toHaveBeenCalledTimes(1);
+          expect(call).toHaveBeenCalledTimes(1);
         } else {
-          expect(expectToCall).toHaveBeenCalledWith(...expectedArgs);
+          expect(call).toHaveBeenCalledWith(...expectedArgs);
         }
       });
     });

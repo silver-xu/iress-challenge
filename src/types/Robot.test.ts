@@ -11,7 +11,7 @@ describe('Robot tests', () => {
 
   beforeEach(() => {
     robot = new Robot(board);
-    board.robots.push(robot);
+    board.robots = [robot];
   });
 
   describe('place method tests', () => {
