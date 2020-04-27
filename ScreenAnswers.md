@@ -1,6 +1,6 @@
-## Initial Screening Questions for Engineering Roles
+# Initial Screening Questions for Engineering Roles
 
-### What does working in a collaborative team environment mean to you?
+## What does working in a collaborative team environment mean to you?
 
 ### Answer:
 
@@ -10,7 +10,7 @@ The second sign of a collaborative team would be trust. Team members should have
 
 The last but not the least, a highly collaborative team would also be highly productive. Everyone should share the same vision, similar value and target the same goal. The team would function autonomously, and the members would be passionate and proud of their own piece of craft.
 
-### In your day to day work, how do you come to understand whether the work you are doing is creating value?
+## In your day to day work, how do you come to understand whether the work you are doing is creating value?
 
 ### Answer:
 
@@ -26,7 +26,7 @@ The last but not the least, a highly collaborative team would also be highly pro
 
   I know I am creating my career value while I support the junior or graduate members of the team to grow in their professional career, in the same way I was supported at the beginning of my career by my mentors.
 
-### Do you prefer OO or Functional programming? Why? What are the core benefits of both? (It’s ok if you don’t know one, just talk about what you’re familiar with)
+## Do you prefer OO or Functional programming? Why? What are the core benefits of both? (It’s ok if you don’t know one, just talk about what you’re familiar with)
 
 ### Answer:
 
@@ -38,7 +38,7 @@ In the last few years, micro-services architecture has grown greatly in populari
 
 In my opinion, for modern projects I would choose to use functional programming with typescript, and use OO only when its required to produce cleaner code. The toy robot project is a great example as the Class Robot should encapsulate its own properties and methods as the caller of Robot should only need to understand the interface of the class.
 
-### What are the most important practices to ensure software quality (in as much detail as you can give)?
+## What are the most important practices to ensure software quality (in as much detail as you can give)?
 
 ### Answer:
 
@@ -76,7 +76,7 @@ In my opinion, for modern projects I would choose to use functional programming 
 
   Write defensive, secure code and deploy to secure infrastructure. Use tools like Secrets Manager to protect secrets.
 
-### In your experience, what are the 3 most valuable software engineering practices?
+## In your experience, what are the 3 most valuable software engineering practices?
 
 ### Answer:
 
